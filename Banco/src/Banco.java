@@ -1,5 +1,11 @@
 
+/**
+ * @author João Carlos Lima
+ * @version 1.0
+ * 
+ */
 public class Banco {
+	
 	
 	public static void main(String[] args) {
 		ContaCorrente contaCorrente = new ContaCorrente();

@@ -1,4 +1,8 @@
-
+/**
+ * 
+ * @author joaoc
+ *
+ */
 public class ContaEspecial extends Conta {
 	
 	private double limiteDeEmprestimo;

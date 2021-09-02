@@ -1,10 +1,21 @@
 
+/**
+ * 
+ * @author joaoc
+ * Classe que representa um conta 
+ */
 public class Conta {
-	
+
 	private int numeroDaConta;
 	private String nomeDoTitular;
 	private double saldo;
 	
+	/**
+	 * Método que cria uma conta
+	 * @param int numeroDaConta numero da conta do banco 
+	 * @param String nomeDoTitular nome do titular
+	 * @param double saldo saldo da conta 
+	 */
 	public Conta(int numeroDaConta, String nomeDoTitular, double saldo) {
 		super();
 		this.numeroDaConta = numeroDaConta;
@@ -16,6 +27,10 @@ public class Conta {
 		
 	}
 	
+	/**
+	 * 
+	 * @param valorDoSaque
+	 */
 	public void sacar(double valorDoSaque){
 		if (valorDoSaque > 0) saldo -= valorDoSaque;
 	}
@@ -28,7 +43,11 @@ public class Conta {
 		this.sacar(valor);
 		contaDeDestino.depositar(valor);
 	}
-	
+
+	/**
+	 * 
+	 * @return int numero da conta
+	 */
 	public int getNumeroDaConta() {
 		return numeroDaConta;
 	}
